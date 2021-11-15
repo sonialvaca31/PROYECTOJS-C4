@@ -21,8 +21,7 @@ app.post('/login', (req, res) => {
 			res.redirect('MenuPrincipal.html');
 		}
 		else {
-			alert('DATOS INVALIDOS');
-			location.reload();
+			res.status(200).send({ message : 'DATOS INVALIDOS' })
 			
 		
 		}
